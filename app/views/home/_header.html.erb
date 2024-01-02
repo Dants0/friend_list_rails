@@ -4,26 +4,34 @@ header{
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: darkgray;
+  background-color: #233142;
   width: 100%;;
   font-family: 'Roboto', sans-serif;
-  border: 1px solid red;
 }
 
 ul{
-  border: 1px solid red;
   display: flex;
   list-style-type: none;
   margin: 4px;
-  gap: 10px;
+  gap: 12px;
   align-items: center;
-  width: 25%;;
-  justify-content: space-around;
+  width: 50%;;
+  justify-content: space-evenly;
 }
 
 a{
   text-decoration: none;
   color: white;
+  background-color: #233142;
+  width: auto;
+  transition: 0.5s all ease-in-out;
+}
+
+a:hover{
+  transition: 0.5s all ease-in-out;
+  background-color: #fff;
+  cursor: pointer;
+  color: #233142;
 }
 
 nav{
@@ -42,6 +50,14 @@ nav{
   align-items: center;
 }
 
+#input_search{
+  # width: 100%;
+  padding: 5px;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+}
+
 </style>
 
 
@@ -51,10 +67,12 @@ nav{
     <a href="/">
     <h1>FriendList</h1>
     </a>
-    <a href="/home/about">Sobre Nós</a>
+    <a href="/home/add">Adicionar Amigo</a>
+    <a href="/home/myfriend">Meus Amigos</a>
+    <a href="/home/about">Sobre</a>
   </ul>
   <div class="search_box">
-  <input id="input_search" type="search" placeholder="Search..."/>
+  <input id="input_search" type="search" placeholder="Search a friend"/>
   <button>Search</button>
   </div>
 </nav>
