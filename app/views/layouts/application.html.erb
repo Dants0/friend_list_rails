@@ -7,9 +7,47 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-  </head>
 
-  <body>
-    <%= yield %>
+
+    </head>
+
+    <body>
+
+    <style>
+      header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: black;
+      }
+
+      ul{
+        display: flex;
+        list-style-type: none;
+        margin: 4px;
+        justify-content: space-between;
+        width: 100%;;
+      }
+
+      a{
+        text-decoration: none;
+        color: white;
+      }
+
+    </style>
+
+
+    <header>
+      <nav>
+        <ul>
+          <a href="/">Home</a>
+          <a href="/home/about">Sobre Nós</a>
+        </ul>
+      </nav>
+    </header>
+
+
+    <%=yield%>
   </body>
 </html>
