@@ -1,0 +1,61 @@
+<style>
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: darkgray;
+  width: 100%;;
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid red;
+}
+
+ul{
+  border: 1px solid red;
+  display: flex;
+  list-style-type: none;
+  margin: 4px;
+  gap: 10px;
+  align-items: center;
+  width: 25%;;
+  justify-content: space-around;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+nav{
+  display: flex;
+  list-style-type: none;
+  margin: 4px;
+  justify-content: space-between;
+  width: 100%;;
+}
+
+.search_box{
+  display: flex;
+  list-style-type: none;
+  margin: 4px;
+  gap: 10px;
+  align-items: center;
+}
+
+</style>
+
+
+<header>
+<nav>
+  <ul>
+    <a href="/">
+    <h1>FriendList</h1>
+    </a>
+    <a href="/home/about">Sobre Nós</a>
+  </ul>
+  <div class="search_box">
+  <input id="input_search" type="search" placeholder="Search..."/>
+  <button>Search</button>
+  </div>
+</nav>
+</header>
