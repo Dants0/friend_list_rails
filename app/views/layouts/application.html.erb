@@ -13,8 +13,23 @@
 
     <body>
 
+    <style>
+      body{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid red;
+      }
+    </style>
+
+
     <%= render 'home/header' %>
 
     <%= yield %>
-  </body>
+
+    <%= render 'home/footer' %>
+
+    </body>
+
 </html>
