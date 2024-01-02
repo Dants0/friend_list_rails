@@ -19,7 +19,7 @@ ul{
   justify-content: space-evenly;
 }
 
-a{
+#anchor{
   text-decoration: none;
   color: white;
   background-color: #233142;
@@ -27,7 +27,7 @@ a{
   transition: 0.5s all ease-in-out;
 }
 
-a:hover{
+#anchor:hover{
   transition: 0.5s all ease-in-out;
   background-color: #fff;
   cursor: pointer;
@@ -64,12 +64,12 @@ nav{
 <header>
 <nav>
   <ul>
-    <a href="/">
+    <a id="anchor" href="/">
     <h1>FriendList</h1>
     </a>
-    <a href="/home/add">Adicionar Amigo</a>
-    <a href="/home/myfriend">Meus Amigos</a>
-    <a href="/home/about">Sobre</a>
+    <a id="anchor" href="/friends/new">Adicionar Amigo</a>
+    <a id="anchor" href="/friends">Meus Amigos</a>
+    <a id="anchor" href="/home/about">Sobre</a>
   </ul>
   <div class="search_box">
   <input id="input_search" type="search" placeholder="Search a friend"/>

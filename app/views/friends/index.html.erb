@@ -1,0 +1,25 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Friends</h1>
+
+<style>
+  #friends{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+</style>
+
+<div id="friends">
+  <% @friends.each do |friend| %>
+    <%= render friend %>
+    <p>
+      <%= link_to "Detalhes", friend %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "Novo amigo", new_friend_path %>
