@@ -1,18 +1,22 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Friends</h1>
+<h3>Friends</h3>
 
 <style>
-  #friends{
+  friends{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    border: 1px solid blue;
+    # grid-template-columns: auto auto;
+    # grid-template-rows: auto auto;
+    # align-items: center;
+    # justify-content: center;
+    # gap: 20px;
+    # border: 1px solid blue;
   }
 
 </style>
+
+<%= link_to "Novo amigo", new_friend_path %>
 
 <div id="friends">
   <% @friends.each do |friend| %>
@@ -22,5 +26,3 @@
     </p>
   <% end %>
 </div>
-
-<%= link_to "Novo amigo", new_friend_path %>
